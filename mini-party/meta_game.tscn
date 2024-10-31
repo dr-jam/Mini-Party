@@ -8,5 +8,3 @@
 [node name="SceneShuffler" type="Node" parent="."]
 script = ExtResource("1_h2741")
 scenes = Array[PackedScene]([ExtResource("2_pbji0")])
-
-[node name="BurgerPlanet" parent="." instance=ExtResource("2_pbji0")]

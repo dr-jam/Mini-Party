@@ -6,17 +6,20 @@ extends Node2D
 @export var burger:PackedScene = preload("res://hamburgering/burger.tscn")
 var _cooldown:float = 1.0
 var _timer:Timer
+var _hunger = 100
 
-# Called when the node enters the scene tree for the first time.
+@onready var label:RichTextLabel = $"../RichTextLabel"
+
+
 func _ready():
-	#connect("YumTime", _play_yum)
-	pass # Replace with function body.
+	label.text = "[b]HAMBURGERING[/b]"
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	if _timer == null || _timer.is_stopped():
-		var new_burger = burger.instantiate()
+		var new_burger:Burger = burger.instantiate()
+		#connect(new_burger.yum_time, _play_yum)
+		new_burger.yum_time.connect(_play_yum)
 		add_child(new_burger)
 		_timer = Timer.new()
 		add_child(_timer)
@@ -25,4 +28,7 @@ func _process(_delta):
 		_cooldown = clampf(_cooldown / 1.1, 0.25, 3.0)
 		
 func _play_yum():
+	_hunger -= 1
+	label.text = "HUNGER %d" % _hunger
+	label.scale *= 1.1
 	$"../Yum".play()
