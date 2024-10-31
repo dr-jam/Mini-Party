@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cvcpfk47y72ct"
+path="res://.godot/imported/DALL·E 2024-10-29 17.07.03 - A cartoon-style hamburger with a sesame seed bun, lettuce, cheese, tomato, and a juicy beef patty. The burger is simple and colorful, drawn in a minim.webp-bb054ecfd0b3f5730c0082aa9789c0d2.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://hamburgering/DALL·E 2024-10-29 17.07.03 - A cartoon-style hamburger with a sesame seed bun, lettuce, cheese, tomato, and a juicy beef patty. The burger is simple and colorful, drawn in a minim.webp"
+dest_files=["res://.godot/imported/DALL·E 2024-10-29 17.07.03 - A cartoon-style hamburger with a sesame seed bun, lettuce, cheese, tomato, and a juicy beef patty. The burger is simple and colorful, drawn in a minim.webp-bb054ecfd0b3f5730c0082aa9789c0d2.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1
