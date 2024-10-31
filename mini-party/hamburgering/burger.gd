@@ -10,8 +10,10 @@ const LIFE_TIME = 5.0
 
 var _death_timer:Timer
 
+@onready var sprite:Sprite2D = $BurgerSprite
 
 func _ready():
+	connect("mouse_entered", _on_mouse_enter)
 	_death_timer = Timer.new()
 	add_child(_death_timer)
 	_death_timer.one_shot = true
@@ -23,12 +25,10 @@ func _ready():
 
 func _physics_process(_delta):
 	if _death_timer != null && _death_timer.is_stopped():
-		print("dead")
 		queue_free()
 	move_and_slide()
 
 
-func _on_mouse_entered():
-	visible = false
+func _on_mouse_enter() -> void:
 	yum_time.emit()
 	queue_free()

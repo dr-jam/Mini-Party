@@ -30,5 +30,5 @@ func _process(_delta):
 func _play_yum():
 	_hunger -= 1
 	label.text = "HUNGER %d" % _hunger
-	label.scale *= 1.1
+	label.scale += Vector2(0.1, 0.1)
 	$"../Yum".play()

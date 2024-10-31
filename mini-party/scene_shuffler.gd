@@ -2,8 +2,12 @@ class_name SceneManager
 extends Node
 
 @export var scenes:Array[PackedScene]
+@export var switch_time:float = 30.0
+
 var current_scene:Node = null
 
+#TODO: timer that swaps to new scene every 30 seconds
+#TODO: randomize picking order of scenes (https://docs.godotengine.org/en/3.1/classes/class_array.html#class-array-method-shuffle)
 
 func _ready() -> void:
 	#var root = get_tree().root
